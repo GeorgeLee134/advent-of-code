@@ -122,7 +122,7 @@ const main = async () => {
 
 if (process.env.RUN_DEBUG) {
   // This is where I just run the shit while I'm working on it!
-  console.log(require('./questions/2019/3/2')())
+  console.log(require('./questions/2019/4/2')())
 } else {
   main()
 }
