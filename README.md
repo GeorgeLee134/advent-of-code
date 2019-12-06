@@ -36,4 +36,5 @@ node server.js
 
 That's it!
 
-![DOG](https://giphy.com/embed/PSKAppO2LH56w)
+![DOG](https://github.com/GeorgeLee134/advent-of-code/master/DOG.gif)
+
