@@ -62,3 +62,5 @@ typings/
 
 # ignore the info files
 *.info
+
+*.exe.stackdump
