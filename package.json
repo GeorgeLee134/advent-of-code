@@ -1,0 +1,56 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "Collection of Advent of code soulutions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node \"server.js\"",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeLee134/advent-of-code.git"
+  },
+  "keywords": [
+    "advent-of-code",
+    "node",
+    "problems"
+  ],
+  "author": "George Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeorgeLee134/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/GeorgeLee134/advent-of-code#readme",
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.1.0",
+    "lint-staged": "^10.0.0-beta.6"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.0.0",
+    "node-html-parser": "^1.1.16",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "tough-cookie": "^3.0.1",
+    "winston": "^3.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ]
+  }
+}
