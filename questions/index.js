@@ -26,7 +26,7 @@ const load = () => {
             continue
           }
           var part = file.replace('.js', '')
-          var text
+          var text = ''
           if (fs.existsSync(`${questionsDir}/${year}/${day}/${part}desc.info`)) {
             text = fs.readFileSync(`${questionsDir}/${year}/${day}/${part}desc.info`, 'utf-8')
           }

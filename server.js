@@ -94,7 +94,7 @@ const main = async () => {
         terminal.clear()
         var part = partResult.part
         console.log(part.desc)
-        console.log(`The answer for ${yearResult.year.name}/${dayResult.day.name}/${partResult.part.name} is ${chalk.red.bgGreen(partResult.part.solution())}`)
+        console.log(`The answer for ${yearResult.year.name}/${dayResult.day.name}/${partResult.part.name} is ${chalk.red.bgGreen(await partResult.part.solution())}`)
 
         await inquirer.prompt({
           name: 'input',
@@ -121,8 +121,11 @@ const main = async () => {
 }
 
 if (process.env.RUN_DEBUG) {
+  const test = async () => {
+    console.log(await require('./questions/2019/5/2')())
+  }
+  test()
   // This is where I just run the shit while I'm working on it!
-  console.log(require('./questions/2019/4/2')())
 } else {
   main()
 }
