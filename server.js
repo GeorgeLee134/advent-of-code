@@ -122,7 +122,7 @@ const main = async () => {
 
 if (process.env.RUN_DEBUG) {
   const test = async () => {
-    console.log(await require('./questions/2019/5/2')())
+    console.log(await require('./questions/2019/6/2')())
   }
   test()
   // This is where I just run the shit while I'm working on it!
